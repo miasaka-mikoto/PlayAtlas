@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1020">
+  <title>PlayAtlas · 聚会局域网</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0c1426;--panel:#15233d;--panel2:#1b2e4f;--ink:#eff3ff;--muted:#9eacc7;--mint:#77e2c1;--gold:#ffb454;--coral:#ff7a70;--line:rgba(255,255,255,.1)}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0,#233e5f 0,#0c1426 46%);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI","Noto Sans SC",sans-serif;min-height:100vh}.shell{width:min(1180px,calc(100% - 48px));margin:auto;padding:28px 0 56px}.top{display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{letter-spacing:.16em;font-weight:800}.brand span{color:var(--gold)}.back{color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:8px 14px}.back:hover{color:var(--ink);border-color:var(--mint)}.hero{display:grid;grid-template-columns:1.4fr .9fr;gap:22px;align-items:stretch;margin:46px 0 26px}.hero-copy,.room{background:linear-gradient(145deg,rgba(28,49,81,.94),rgba(18,31,55,.92));border:1px solid var(--line);border-radius:26px;padding:32px;box-shadow:0 20px 70px rgba(0,0,0,.22)}.eyebrow{color:var(--mint);font-size:11px;letter-spacing:.18em;text-transform:uppercase}.hero h1{font-size:clamp(34px,5vw,68px);line-height:1.02;margin:16px 0 14px}.hero h1 em{color:var(--gold);font-style:normal}.hero p{color:var(--muted);max-width:570px}.room h2{margin:0 0 4px}.room p{color:var(--muted);margin-top:0}.room input,.room select{width:100%;background:#0e1a31;color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:11px;margin:5px 0 11px}.row{display:flex;gap:10px;align-items:center}.btn{cursor:pointer;border:0;border-radius:999px;padding:11px 17px;font-weight:700;background:var(--gold);color:#1c2330}.btn.secondary{background:transparent;color:var(--ink);border:1px solid var(--line)}.status{font-size:12px;color:var(--muted);margin-top:12px}.status strong{color:var(--mint)}.section-head{display:flex;justify-content:space-between;align-items:end;margin:26px 0 13px}.section-head h2{margin:0;font-size:24px}.section-head p{margin:0;color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{position:relative;background:rgba(20,35,60,.94);border:1px solid var(--line);border-radius:18px;padding:20px;min-height:176px;transition:.18s}.card:hover,.card.selected{transform:translateY(-3px);border-color:rgba(119,226,193,.75);box-shadow:0 15px 35px rgba(0,0,0,.2)}.card .icon{font-size:28px}.card h3{margin:10px 0 4px}.card p{margin:0;color:var(--muted);font-size:13px}.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:15px}.tag{font-size:11px;color:var(--mint);background:rgba(119,226,193,.1);padding:4px 8px;border-radius:99px}.tag.dim{color:var(--muted);background:rgba(255,255,255,.06)}.note{margin-top:24px;padding:16px 18px;border-left:3px solid var(--gold);background:rgba(255,180,84,.08);color:var(--muted);border-radius:0 12px 12px 0}.note b{color:var(--ink)}footer{margin-top:34px;color:#6f7d97;font-size:12px;display:flex;justify-content:space-between}@media(max-width:850px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.shell{width:min(100% - 28px,1180px)}.grid{grid-template-columns:1fr}.hero-copy,.room{padding:23px}footer{display:block}footer span{display:block;margin-top:6px}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="top"><div class="brand">PLAY<span>ATLAS</span> <small>／世界游戏馆</small></div><a class="back" href="index.html">← 返回大厅</a></header>
+    <section class="hero">
+      <div class="hero-copy"><div class="eyebrow">PARTY PACK · LOCAL FIRST</div><h1>把一张桌子，<br><em>变成一场聚会。</em></h1><p>坦克、牌局和积分娱乐都在一个离线优先的房间里。房主权威验证每一步，隐藏手牌只发给对应玩家。</p><div class="row"><button class="btn" id="select-first">选一局开始</button><button class="btn secondary" id="protocol">查看联机说明</button></div></div>
+      <aside class="room"><h2>局域网房间</h2><p>这是协议预览；真实房主请运行项目内 LAN CLI。</p><label for="room-game">选择游戏</label><select id="room-game"><option value="uno">UNO</option><option value="tank_battle">坦克大战</option><option value="upgrade_poker">升级扑克</option><option value="blackjack">21点</option></select><label for="room-name">玩家名</label><input id="room-name" value="本地玩家" maxlength="24"><div class="row"><button class="btn" id="host-btn">创建房间</button><button class="btn secondary" id="join-btn">加入房间</button></div><div class="status" id="room-status">状态：<strong>未连接</strong> · 不展示虚假在线人数</div></aside>
+    </section>
+    <section><div class="section-head"><div><h2>聚会游戏包</h2><p>六个独立条目，尚未计入首发 36 款正式可玩数量。</p></div><span class="tag dim">规则层 ready · Godot/LAN 人工待验</span></div><div class="grid" id="party-grid"></div></section>
+    <div class="note"><b>安全边界：</b>“奖品转盘机”和“幸运积分轮”是免费、无筹码、无下注、不可兑换的概率娱乐玩具；只产生本地积分，不提供真实赌博、广告、充值或现金流。</div>
+    <footer><span>PLAYATLAS / PARTY PACK 1</span><span>本地房间 · 主机权威 · 不需要互联网</span></footer>
+  </main>
+  <script src="party.js"></script>
+</body>
+</html>

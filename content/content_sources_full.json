@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-10-04",
+  "purpose": "Provenance and licensing register for PlayAtlas runtime/content assets.",
+  "asset_policy": {
+    "runtime_art": "Original PlayAtlas vector/2D/3D art only unless a later entry explicitly records a compatible license.",
+    "runtime_audio": "Original or separately licensed audio only. No downloaded music, sound effects or voice assets are bundled by this register.",
+    "rule_text": "Tutorial text is rewritten by PlayAtlas. External rule pages are linked as research sources, not copied into the game.",
+    "code": "No old project code is reused. Third-party code may be added only after license and attribution review.",
+    "remote_content": "The offline build has no required content server. A future package source must be opt-in and checksum-verified.",
+    "asset_count_currently_registered": 0
+  },
+  "runtime_dependencies": [
+    {
+      "content_source_id": "CONTENT-GODOT-001",
+      "name": "Godot Engine",
+      "version_target": "4.7.2-stable",
+      "source_url": "https://godotengine.org/download/archive/",
+      "license": "MIT",
+      "bundled_or_runtime": "runtime_engine",
+      "verification_status": "verified_by_build_environment_audit",
+      "attribution_required": true,
+      "notes": "Freeze the exact downloaded/editor version in the build manifest. Include the Godot MIT notice in any redistributed build. If the build agent selects a different 4.x patch, update this entry before release."
+    }
+  ],
+  "reference_only_sources": [
+    {
+      "content_source_id": "CONTENT-2048-REF-001",
+      "name": "Original 2048 project",
+      "source_url": "https://github.com/gabrielecirulli/2048",
+      "license_observed": "MIT in upstream repository; verify current LICENSE before any code reuse",
+      "bundled": false,
+      "use": "Mechanic reference only. PlayAtlas implementation and assets are independent.",
+      "attribution_required": "only_if_code_or_assets_are_reused"
+    },
+    {
+      "content_source_id": "CONTENT-LUDII-REF-001",
+      "name": "Ludii General Game System / Digital Ludeme Project",
+      "source_url": "https://ludii.games/",
+      "license_observed": "Research/database license must be checked per artifact; not assumed reusable",
+      "bundled": false,
+      "use": "Rule research entry point for traditional games; no Ludii database, code or images are redistributed in PlayAtlas.",
+      "attribution_required": true
+    },
+    {
+      "content_source_id": "CONTENT-WIKIMEDIA-REF-001",
+      "name": "Wikimedia/Wikipedia pages used as secondary mechanic references",
+      "source_url": "https://www.wikimedia.org/",
+      "license_observed": "Per-page Wikimedia terms; not an asset source",
+      "bundled": false,
+      "use": "Reading and cross-check only. No article text or images are copied into the build.",
+      "attribution_required": false
+    }
+  ],
+  "planned_asset_sources": [
+    {
+      "content_source_id": "CONTENT-SELF-AUTHORED-ART-001",
+      "name": "PlayAtlas original visual system",
+      "source_url": null,
+      "license": "Copyright PlayAtlas project; distribution terms to be chosen by project owner",
+      "bundled": "planned",
+      "use": "Original board materials, card faces, tile symbols, UI icons, table-sport props and cover images.",
+      "status": "not_yet_created"
+    },
+    {
+      "content_source_id": "CONTENT-SELF-AUTHORED-AUDIO-001",
+      "name": "PlayAtlas original audio system",
+      "source_url": null,
+      "license": "Copyright PlayAtlas project; distribution terms to be chosen by project owner",
+      "bundled": "planned",
+      "use": "Original short UI/gameplay sounds and optional ambient loops.",
+      "status": "not_yet_created"
+    },
+    {
+      "content_source_id": "CONTENT-SYSTEM-FONTS-001",
+      "name": "Operating-system fallback fonts",
+      "source_url": null,
+      "license": "Controlled by the operating system; PlayAtlas does not redistribute them",
+      "bundled": false,
+      "use": "Temporary development fallback only. A release font must be added with an explicit license record before packaging.",
+      "status": "pending_release_font_selection"
+    }
+  ],
+  "release_checks": [
+    "Run a recursive asset inventory and match every non-source file to a content_source_id.",
+    "Do not ship screenshots, logos, card art, music or code copied from referenced games or rule sites.",
+    "Check every font, icon and audio file license before Windows/Android export.",
+    "Regenerate THIRD_PARTY_NOTICES.md after any dependency or asset-source change.",
+    "Record checksums for release package contents; never claim a remote download source exists until configured and tested."
+  ]
+}

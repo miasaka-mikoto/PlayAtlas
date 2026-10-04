@@ -1,0 +1,16 @@
+# Generated local caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.godot/
+.import/
+
+# Local editor/OS noise
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Do not commit user saves or machine-specific package installs if the
+# project is opened in Godot.
+user://

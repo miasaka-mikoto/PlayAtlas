@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "catalogue_version": "party-expansion-1.0.0",
+  "games": [
+    {"id":"tank_battle","title":"Tank Battle","title_zh":"坦克大战","game_family":"party_arcade","status":"rules_engine_ready","players":{"min":2,"max":4},"supported_modes":["local_multiplayer","lan"],"ruleset_id":"tank_battle.playatlas.v1","ruleset_version":"1.0"},
+    {"id":"uno","title":"UNO","title_zh":"UNO","game_family":"party_cards","status":"rules_engine_ready","players":{"min":2,"max":4},"supported_modes":["local_multiplayer","lan","computer"],"ruleset_id":"uno.standard.digital.v1","ruleset_version":"1.0"},
+    {"id":"upgrade_poker","title":"Sheng Ji / Upgrade","title_zh":"升级扑克","game_family":"party_trick_taking","status":"rules_engine_ready","players":{"min":4,"max":4},"supported_modes":["local_multiplayer","lan","computer"],"ruleset_id":"shengji.digital_adaptation.v1","ruleset_version":"1.0"},
+    {"id":"blackjack","title":"Blackjack","title_zh":"21点","game_family":"party_cards","status":"rules_engine_ready","players":{"min":1,"max":4},"supported_modes":["local_multiplayer","lan","computer"],"ruleset_id":"blackjack.free_play_digital.v1","ruleset_version":"1.0"},
+    {"id":"prize_reels","title":"Prize Reels","title_zh":"奖品转盘机","game_family":"party_chance_toy","status":"rules_engine_ready","players":{"min":1,"max":1},"supported_modes":["local_party"],"ruleset_id":"free_play_reels.v1","ruleset_version":"1.0"},
+    {"id":"prize_wheel","title":"Prize Wheel","title_zh":"幸运积分轮","game_family":"party_chance_toy","status":"rules_engine_ready","players":{"min":1,"max":1},"supported_modes":["local_party"],"ruleset_id":"free_play_wheel.v1","ruleset_version":"1.0"}
+  ]
+}

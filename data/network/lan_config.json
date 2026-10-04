@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "protocol_version": 1,
+  "default_port": 27800,
+  "transport": "ENet in Godot; newline-delimited JSON in the headless adapter",
+  "authority": "host",
+  "max_message_bytes": 262144,
+  "discovery": "manual address only; no remote discovery service configured",
+  "supported_game_ids": ["gomoku", "reversi", "crazy_eights", "tank_battle", "uno", "upgrade_poker", "blackjack"],
+  "hidden_information": "send get_observation(player_id), never full hidden state",
+  "reconnect": "reuse client_id while room retains the player slot",
+  "remote_source": "未配置"
+}

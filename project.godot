@@ -1,0 +1,43 @@
+; PlayAtlas - World Game Gallery
+; Godot 4.x project configuration. The repository also includes a Python
+; headless smoke runner because the build host may not have Godot installed.
+config_version=5
+
+[application]
+config/name="PlayAtlas"
+config/description="世界游戏馆 — an offline-first collection of classic and traditional games"
+run/main_scene="res://ui/CoreShell.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/version="0.1.0"
+
+[autoload]
+AppCore="*res://scripts/core/app_core.gd"
+GameRegistry="*res://scripts/core/game_registry.gd"
+SaveService="*res://scripts/core/save_service.gd"
+SettingsService="*res://scripts/core/settings_service.gd"
+StatisticsService="*res://scripts/core/statistics_service.gd"
+PackageManager="*res://scripts/core/package_manager.gd"
+InputService="*res://scripts/core/input_service.gd"
+AudioService="*res://scripts/core/audio_service.gd"
+TutorialService="*res://scripts/core/tutorial_service.gd"
+LanService="*res://scripts/network/lan_service.gd"
+
+[display/window]
+size/viewport_width=1440
+size/viewport_height=900
+size/window_width_override=1280
+size/window_height_override=800
+stretch/mode="canvas_items"
+handheld/orientation=1
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+environment/defaults/default_clear_color=Color(0.035, 0.047, 0.071, 1)
+
+[gui]
+theme/default_font_multichannel_signed_distance_field=true
+
+[file_system]
+import/blender/enabled=false

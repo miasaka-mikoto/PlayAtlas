@@ -1,0 +1,59 @@
+{
+  "rules": {
+    "tank": {
+      "status": "playing",
+      "winner": null,
+      "scores": [
+        1,
+        0
+      ],
+      "ticks": 1
+    },
+    "uno": {
+      "status": "finished",
+      "winner": 3,
+      "hand_counts": [
+        7,
+        3,
+        8,
+        0
+      ]
+    },
+    "upgrade": {
+      "status": "finished",
+      "winner_team": 0,
+      "scores": [
+        95,
+        90
+      ],
+      "tricks_won": [
+        12,
+        13
+      ],
+      "cards_remaining": 0
+    },
+    "blackjack": {
+      "status": "finished",
+      "dealer_value": 17,
+      "outcomes": [
+        "lose",
+        "win"
+      ],
+      "points": [
+        -1,
+        2
+      ]
+    },
+    "reels": {
+      "status": "finished",
+      "spins": 3,
+      "points": 31
+    }
+  },
+  "lan": {
+    "request_id": "57688a39292b4cbd99c78390e090e3b3",
+    "ok": true,
+    "player_id": 1
+  },
+  "lan_status": "localhost_pass"
+}

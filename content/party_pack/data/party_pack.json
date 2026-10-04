@@ -1,0 +1,6 @@
+{
+  "catalog": "res://data/games/PARTY_CATALOG.json",
+  "rules": "res://content/PARTY_RULES.md",
+  "lan_protocol": "res://docs/LAN_PROTOCOL.md",
+  "scripts": []
+}

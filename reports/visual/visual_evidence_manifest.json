@@ -1,0 +1,32 @@
+{
+  "artifact": "playatlas_hall_automated_preview_1440x900.png",
+  "generated_at_utc": "2026-10-04T14:53:57.659591+00:00",
+  "resolution": [
+    1440,
+    900
+  ],
+  "method": "Procedural PIL composition, supersampled 2x and downsampled with Lanczos.",
+  "design_reference": [
+    "playatlas_core/preview/index.html",
+    "playatlas_core/preview/styles.css"
+  ],
+  "design_reference_sha256": {
+    "playatlas_core/preview/index.html": "c01458dbc4f010eca3c00324f2559f9019882003e849373dacd71a61be6caeb7",
+    "playatlas_core/preview/styles.css": "41562af8ac598e7d6c5f56e0e2db073b64f746f162046fe6185907f2f3b28573"
+  },
+  "generator": "playatlas_core/reports/visual/generate_preview.py",
+  "source_policy": "Original vector-like shapes and typography only; no old-project images, models, music, or copied assets.",
+  "runtime_claims": {
+    "godot_runtime_capture": false,
+    "windows_launch": false,
+    "manual_interaction": false,
+    "android_validation": false
+  },
+  "visible_disclosure": "AUTOMATED VISUAL PREVIEW · Procedural PIL composition · not a manual runtime screenshot",
+  "catalog_context": {
+    "catalog_entries": 36,
+    "interactive_sample_cards_shown": 6,
+    "source_status": "catalogue and browser preview only; not a claim that all 36 games are complete"
+  },
+  "sha256": "637eb393a89b1beb79aa6b0362c5d5ec9ae0306f6b9498b0dcea8fa3bd23ddd5"
+}

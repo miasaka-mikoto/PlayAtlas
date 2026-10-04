@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PlayAtlas trusted content package manifest",
+  "type": "object",
+  "required": ["id", "title", "version", "game_family", "ruleset_version", "core_version_min", "save_schema_version", "dependencies", "supported_modes", "supported_inputs", "supported_platforms", "package_size", "checksum", "license", "entry_resource", "content_sources"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"},
+    "title": {"type": "string", "minLength": 1},
+    "version": {"type": "string"},
+    "game_family": {"type": "string"},
+    "ruleset_version": {"type": "string"},
+    "core_version_min": {"type": "string"},
+    "save_schema_version": {"type": "integer", "minimum": 1},
+    "dependencies": {"type": "array", "items": {"type": "string"}},
+    "supported_modes": {"type": "array", "items": {"type": "string"}},
+    "supported_inputs": {"type": "array", "items": {"type": "string"}},
+    "supported_platforms": {"type": "array", "items": {"type": "string"}},
+    "package_size": {"type": "integer", "minimum": 0},
+    "checksum": {"type": "string"},
+    "license": {"type": "string"},
+    "entry_resource": {"type": "string"},
+    "content_sources": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

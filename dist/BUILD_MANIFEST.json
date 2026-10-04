@@ -1,0 +1,579 @@
+{
+  "schema_version": 1,
+  "product": "PlayAtlas",
+  "version": "0.1.0",
+  "artifact": "PlayAtlas-portable-source-v0.1.0.zip",
+  "generated_at": "2026-10-04T16:53:29Z",
+  "artifact_kind": "portable_source_archive",
+  "contains": [
+    "Godot project",
+    "Python rule engines",
+    "tests",
+    "tools",
+    "data",
+    "docs",
+    "web_preview_if_present"
+  ],
+  "native_executable_included": false,
+  "windows_started": false,
+  "windows_interaction_tested": false,
+  "android_apk_included": false,
+  "android_device_tested": false,
+  "files": [
+    {
+      "path": ".gitignore",
+      "size": 254,
+      "sha256": "ce225831cda6d41ab8bc9109e2dcf8c111c5bd60426e12c6ed8b2219d7d3555a"
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "size": 2673,
+      "sha256": "1f141fa85ec08babefd689a0cf354ce58259ced30922a743b3496d42d16ba731"
+    },
+    {
+      "path": "ENVIRONMENT_LIMITATIONS.md",
+      "size": 973,
+      "sha256": "c9684d87d4640a887286a2dcdaf8b146e84ca0431a5fee40ba7da601cb778e33"
+    },
+    {
+      "path": "GAME_CATALOG.json",
+      "size": 51778,
+      "sha256": "87333e6bacd4fad966662bb8b954d3cf75ed9afea51e6cbe7af207eb77782e2f"
+    },
+    {
+      "path": "GAME_STATUS.md",
+      "size": 9623,
+      "sha256": "68096026d95f689cb4e34986ef5aae92f902ee5bcfabece1c43b300b6429131d"
+    },
+    {
+      "path": "KNOWN_ISSUES.md",
+      "size": 2012,
+      "sha256": "47b0a0c130b8db2de4ca9edcc44db428c5725ac707dd44a96c6536d2431f972a"
+    },
+    {
+      "path": "NEXT_STEPS.md",
+      "size": 1543,
+      "sha256": "4a9e44d4cdbd9a26e4cf186fcb53215c8914e51a71cef83e2c4d753426c449b4"
+    },
+    {
+      "path": "PARTY_STATUS.md",
+      "size": 1936,
+      "sha256": "a60e52c4af768c7c78e5d524b1e0ea0566539812c71304cbe8c0fa00f27081e7"
+    },
+    {
+      "path": "PORTABLE_BUILD_NOTES.md",
+      "size": 1041,
+      "sha256": "4502c75bada783a053e813007453f3b55160c77161607ea4253fd8a99d818186"
+    },
+    {
+      "path": "README.md",
+      "size": 3727,
+      "sha256": "630a140dac25cd7ccafa3a8ec6b3bf472bbc84ca18ca186f429cab30dacda2c3"
+    },
+    {
+      "path": "ROADMAP.md",
+      "size": 2409,
+      "sha256": "6b7b6d4eb6c67330c858f67454159ee182b33f50537ebd92ca10e36f9f18b9fd"
+    },
+    {
+      "path": "START_PREVIEW.bat",
+      "size": 427,
+      "sha256": "fde79cc015c444aa935217193f82fc6d8a78d3b87452c691dc65a4845966e15f"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "size": 3407,
+      "sha256": "f6df31a6a2b988ce2c2018c5ba3e63d820b206dcb58eef88d29b28a6c63bf138"
+    },
+    {
+      "path": "UI_PREVIEW.md",
+      "size": 1848,
+      "sha256": "b5d0e4008ca2e90b365741d296c2a01bda183535d7392a40c5654a83d8c6c3f9"
+    },
+    {
+      "path": "__init__.py",
+      "size": 257,
+      "sha256": "f6f5f3e217b03044d371187f00aeeaf21fc5d5a0291d87df7c2b438aadae84c1"
+    },
+    {
+      "path": "build_portable.bat",
+      "size": 223,
+      "sha256": "858a8dee553da97153c7929c3038912228a9dc143c64a4f38e76a10feaac2c7e"
+    },
+    {
+      "path": "build_portable.sh",
+      "size": 258,
+      "sha256": "88d612bf1d308d9fc8d8614a9765e827d6a66a0baa3ea4d3d2ac9dda729ccecf"
+    },
+    {
+      "path": "content/EXPANSION_CANDIDATES.json",
+      "size": 9369,
+      "sha256": "96c991a13cb52d979652424873c275aaf4ed1ee33777f140a50764699ef11dbf"
+    },
+    {
+      "path": "content/GAME_CATALOG.json",
+      "size": 51778,
+      "sha256": "87333e6bacd4fad966662bb8b954d3cf75ed9afea51e6cbe7af207eb77782e2f"
+    },
+    {
+      "path": "content/GAME_CATALOG_FULL.json",
+      "size": 50735,
+      "sha256": "2f0045f63a55eb67754bba91b42160fabe00c8e537ba5a07fcdb47184097c95b"
+    },
+    {
+      "path": "content/PARTY_CATALOG.json",
+      "size": 4255,
+      "sha256": "12cf319da8db570234422a834506c9319bcd746589118b3e8a7bcecb698a5406"
+    },
+    {
+      "path": "content/PARTY_RULES.md",
+      "size": 2012,
+      "sha256": "85426dfb886ccd81a32ac4340b31cd9b5e9bd9f284541b37356f56b5f846ea7a"
+    },
+    {
+      "path": "content/THIRD_PARTY_NOTICES.md",
+      "size": 3365,
+      "sha256": "e23a573f5832fe2539ddad19c89e4d55dfbddc7674f775ff31ccb6c7296a7fe9"
+    },
+    {
+      "path": "content/content_sources.json",
+      "size": 4717,
+      "sha256": "52e8a4f235e77cdb9f4a2447ece4b3872d99f58a0c2649e40627bab021dc7c8f"
+    },
+    {
+      "path": "content/content_sources_full.json",
+      "size": 4717,
+      "sha256": "52e8a4f235e77cdb9f4a2447ece4b3872d99f58a0c2649e40627bab021dc7c8f"
+    },
+    {
+      "path": "content/party_pack/data/party_pack.json",
+      "size": 163,
+      "sha256": "bf61902820a1f9417d278e0c32f059f6cc0386275a822223c86359a635924804"
+    },
+    {
+      "path": "content/party_pack/manifest.json",
+      "size": 873,
+      "sha256": "7106a8d680461b719b0d917f592b59097c6cd4e1e6ce0bc262341501764da8d6"
+    },
+    {
+      "path": "content/placeholder/data/example.json",
+      "size": 98,
+      "sha256": "4a71799b389946a4d10782b4fe8c1d1ce9b70ab4e5a30019b2a76280b087758e"
+    },
+    {
+      "path": "content/placeholder/manifest.json",
+      "size": 494,
+      "sha256": "4a82a6d4ed32df319040cb81fede80cdf84f6accba007f67587e04aac2f92eb7"
+    },
+    {
+      "path": "content/rules_sources.json",
+      "size": 17715,
+      "sha256": "086267dfcdb2734e2315a0b15b535c1a129f9b5ed2690c4e76b45eb5f31e0a40"
+    },
+    {
+      "path": "content/rules_sources_full.json",
+      "size": 16075,
+      "sha256": "a03c4151d6db36766bb69be677537e27d0d072d1681e716dcb514707abc6de8f"
+    },
+    {
+      "path": "content_sources.json",
+      "size": 4717,
+      "sha256": "52e8a4f235e77cdb9f4a2447ece4b3872d99f58a0c2649e40627bab021dc7c8f"
+    },
+    {
+      "path": "data/config/default_settings.json",
+      "size": 268,
+      "sha256": "747af789c55a5418693234e4fcc575cbf542b1d505e6e226f762841de2ecc61a"
+    },
+    {
+      "path": "data/config/package_manifest.schema.json",
+      "size": 1334,
+      "sha256": "97cd93baef12a0f3814f6c336128ee2a3af3d328e64f34c1765a153beac70fd3"
+    },
+    {
+      "path": "data/games/GAME_CATALOG.json",
+      "size": 13926,
+      "sha256": "7bcb08dc7f6a371da8a10fd004fade910420938433d55b7fb89a2ae354988558"
+    },
+    {
+      "path": "data/games/PARTY_CATALOG.json",
+      "size": 1715,
+      "sha256": "574fcae0f3a662697a00441157885d82a1167cd4f591736ec05e0f3eb18e82c9"
+    },
+    {
+      "path": "data/network/lan_config.json",
+      "size": 588,
+      "sha256": "a1e0b037fdc351f06cbb13278841adbaedbf5e199762641ed0aaf7581731c83c"
+    },
+    {
+      "path": "data/rules/content_sources.json",
+      "size": 4717,
+      "sha256": "52e8a4f235e77cdb9f4a2447ece4b3872d99f58a0c2649e40627bab021dc7c8f"
+    },
+    {
+      "path": "data/rules/rules_sources.json",
+      "size": 17715,
+      "sha256": "086267dfcdb2734e2315a0b15b535c1a129f9b5ed2690c4e76b45eb5f31e0a40"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "size": 1926,
+      "sha256": "7a5f79f649853e5beaef18adea5fe6708d84231869ee8214b8ce014a6e1f09d9"
+    },
+    {
+      "path": "docs/ENVIRONMENT_LIMITATIONS.md",
+      "size": 737,
+      "sha256": "1c9c688c53423c99676af8eff85b6301cbaf60abd3f49833afe5e5c0aec8353f"
+    },
+    {
+      "path": "docs/GITHUB_UPLOAD.md",
+      "size": 931,
+      "sha256": "0b57ce9e582e0856d9110baea896ab3c80011e15e5c1a2d9cc44ae740f28cc3e"
+    },
+    {
+      "path": "docs/LAN_PROTOCOL.md",
+      "size": 2892,
+      "sha256": "72837fe0595f5baa98b500d7126b6b50f9095243bd78204cdf21a724a4822ded"
+    },
+    {
+      "path": "docs/UI_PREVIEW.md",
+      "size": 1843,
+      "sha256": "58a8549e96e78cd2cd62e00a7cf352f163c45e4f71c34aa5fe14b9ba68237e1f"
+    },
+    {
+      "path": "export_presets.cfg",
+      "size": 2860,
+      "sha256": "3ab2518bf68be7d63819cabe4fb78220bf06dd18abdeed93226ec476cce50b36"
+    },
+    {
+      "path": "games/__init__.py",
+      "size": 2882,
+      "sha256": "f3140a30e100406002a3ca0891e8fcc345d6a4d1c28c73df5daeae48d946ce5b"
+    },
+    {
+      "path": "games/carrom.py",
+      "size": 16467,
+      "sha256": "80d21487b7d450045059fd2a450458cd59985578219bb276af724c9b3b4dc195"
+    },
+    {
+      "path": "games/common.py",
+      "size": 625,
+      "sha256": "6861ad49f320897ff2e7179bf845017ebd832be5fd02c12abd2ab22e2f310f2a"
+    },
+    {
+      "path": "games/expansion.py",
+      "size": 66210,
+      "sha256": "4904b852e963ceed7de0e432b9eb8dd5b0ea41b467b18232331c062e7d1edd11"
+    },
+    {
+      "path": "games/extended.py",
+      "size": 31312,
+      "sha256": "511f55e828f7a534b1af7066956e417379474e48240415c207dbdd1bac62f91d"
+    },
+    {
+      "path": "games/gomoku.py",
+      "size": 7837,
+      "sha256": "d1fb28681264884e6bb89e87ab01c6ce637ba133e5eaf3adc4d718d8066f7e8b"
+    },
+    {
+      "path": "games/klondike.py",
+      "size": 17313,
+      "sha256": "4fccce3bd8fee33ca30240900bba4ed8c990e26282ec4cc083eac595901c1388"
+    },
+    {
+      "path": "games/minesweeper.py",
+      "size": 11901,
+      "sha256": "0fb43f034ef0a195078d2b06197aae0b3d5b52f65feb21f210dac2a8b0866e19"
+    },
+    {
+      "path": "games/oware.py",
+      "size": 9583,
+      "sha256": "eaf10c38b0a18c134b2d4a5d125544151bfe6ff1d012fd14c3b55e3a976485f9"
+    },
+    {
+      "path": "games/party.py",
+      "size": 41648,
+      "sha256": "5be46d9658ae08fd82160a8b7f76b012e203d715f8959cb497835503af39fa07"
+    },
+    {
+      "path": "games/snake.py",
+      "size": 9713,
+      "sha256": "3138199b6873b2b484d5212c00a6a16f9d83f424ab9873122b5ea1a6c19326ac"
+    },
+    {
+      "path": "network/__init__.py",
+      "size": 213,
+      "sha256": "ead90b36d98294467ceac9927dcdee396d9e65eda1f79d188888d828bfe7358b"
+    },
+    {
+      "path": "network/lan.py",
+      "size": 25129,
+      "sha256": "9e5f7ee1e32c3acad5959291a1eb4cc428915fadb98b1d7f37a46d5d715159e6"
+    },
+    {
+      "path": "preview/app.js",
+      "size": 37717,
+      "sha256": "d6be090217d5cf719ee74de01dec7769434792fc662ab894eb19cb187962c7d1"
+    },
+    {
+      "path": "preview/index.html",
+      "size": 7376,
+      "sha256": "0a7f1e3aafb989d2c53ff2349de3f99559eadc86911d10b99b223275d9fdeee5"
+    },
+    {
+      "path": "preview/party.html",
+      "size": 5685,
+      "sha256": "dda302784cb44f1a78210915086ead6d90a45c7b8336b2f91d4a8edf8533add4"
+    },
+    {
+      "path": "preview/party.js",
+      "size": 2657,
+      "sha256": "80a2ba359c8447586423e2d014e49d8ac31dc7f3f469db48d54a7935f2652949"
+    },
+    {
+      "path": "preview/styles.css",
+      "size": 19999,
+      "sha256": "41562af8ac598e7d6c5f56e0e2db073b64f746f162046fe6185907f2f3b28573"
+    },
+    {
+      "path": "project.godot",
+      "size": 1542,
+      "sha256": "64dd3414d83a1b82cecf4c40ed13f280ff5fb1a45e73a8633648e8ae0acc631b"
+    },
+    {
+      "path": "reports/qa/environment.json",
+      "size": 1032,
+      "sha256": "67385171184e1e9e2a2d5cdf890bf6eec68103fe3fadaa23425534a2e450a89f"
+    },
+    {
+      "path": "reports/qa/godot_static_validation.md",
+      "size": 4038,
+      "sha256": "7757b6284ebe44b4c26f03a80b164fee4835de13757ba3d210b11054d4efeff9"
+    },
+    {
+      "path": "reports/qa/party_smoke.json",
+      "size": 916,
+      "sha256": "6eb0eb89f32ec2713b4a5e16e3c1ae99ecd3e1c45b9ceae906757d0f8aa9408d"
+    },
+    {
+      "path": "reports/qa/qa_report.json",
+      "size": 38215,
+      "sha256": "d2be46b28799afd64f3307479796bc67be6f5a5f79f63dfdfe57b1b3811e84b6"
+    },
+    {
+      "path": "reports/qa/qa_report.md",
+      "size": 4468,
+      "sha256": "a19c9a74d23a524cb31921ee1f9af77f2e00cc47cf6a7c7c1110e762c14e5556"
+    },
+    {
+      "path": "reports/visual/.keep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/visual/generate_preview.py",
+      "size": 18724,
+      "sha256": "bb164f865c833b5861c6cfb4a54bcb875ee9cf6e22d0508ce55c52c5a927c3e9"
+    },
+    {
+      "path": "reports/visual/playatlas_hall_automated_preview_1440x900.png",
+      "size": 256148,
+      "sha256": "637eb393a89b1beb79aa6b0362c5d5ec9ae0306f6b9498b0dcea8fa3bd23ddd5"
+    },
+    {
+      "path": "reports/visual/visual_evidence_manifest.json",
+      "size": 1364,
+      "sha256": "c84371b6598507b61c2f808ff6cdbd4c14957b6205bd645dca3b4aaae033d8f8"
+    },
+    {
+      "path": "rules_sources.json",
+      "size": 17715,
+      "sha256": "086267dfcdb2734e2315a0b15b535c1a129f9b5ed2690c4e76b45eb5f31e0a40"
+    },
+    {
+      "path": "run_qa.bat",
+      "size": 215,
+      "sha256": "430f579b62e6c76f76cd49586eb35079fd6916ebf54db539260c255cfcc79194"
+    },
+    {
+      "path": "run_qa.sh",
+      "size": 252,
+      "sha256": "358ef9fe65246f13e27488632df454e7e6776d650aa29b0c5feb01d38694dea0"
+    },
+    {
+      "path": "scripts/core/app_core.gd",
+      "size": 2234,
+      "sha256": "60112ed729394d043c188118dfc727b8248d091e7862bf9d211ea9767b503bdc"
+    },
+    {
+      "path": "scripts/core/audio_service.gd",
+      "size": 1906,
+      "sha256": "f6d35deb895a4037d4ef2ef2613e8688426905f7d0dca8af6a47cbe2fcb8804f"
+    },
+    {
+      "path": "scripts/core/game_context.gd",
+      "size": 759,
+      "sha256": "3b4447b0f2243ec1c46fd759915073a9d42ee72302b51ffb6f5479b071c6cbc5"
+    },
+    {
+      "path": "scripts/core/game_module.gd",
+      "size": 2892,
+      "sha256": "96cb0bd93329046a7655978f0bf16a5364dedfb0843feca20556fb3241d0da76"
+    },
+    {
+      "path": "scripts/core/game_registry.gd",
+      "size": 6400,
+      "sha256": "502ec72d7bab4fda87c5c8b7bcab34a93fb3b56df2670c19e9147593d1ace118"
+    },
+    {
+      "path": "scripts/core/input_service.gd",
+      "size": 1856,
+      "sha256": "85c200b05298a4f50862ef8df2bf01cf26f9532959ce73f73cfa1976beecb1e3"
+    },
+    {
+      "path": "scripts/core/package_manager.gd",
+      "size": 6878,
+      "sha256": "51f673fc0f0f23f2941d4b6f507e0451e9e5146942da06db379222ed549d2247"
+    },
+    {
+      "path": "scripts/core/save_service.gd",
+      "size": 3330,
+      "sha256": "c3d3db3a4fac842a5a8e788c6353455cb9e2d7ad42c1d6c630988d341d11733f"
+    },
+    {
+      "path": "scripts/core/settings_service.gd",
+      "size": 1462,
+      "sha256": "7888a3ff714a86a9c2dc8a649d6193cecc63f4b0c9153cc1ff3bf3a76c8765de"
+    },
+    {
+      "path": "scripts/core/statistics_service.gd",
+      "size": 2270,
+      "sha256": "7431136b3bfb7ed649efa4aded674bbc9dd4e8593e9e7182ec1568538ce88dc8"
+    },
+    {
+      "path": "scripts/core/tutorial_service.gd",
+      "size": 1162,
+      "sha256": "fbb87c8b1c7c00cc7018bd868dfe6ed6015c7b7e62db2354676635dda340e93c"
+    },
+    {
+      "path": "scripts/network/lan_service.gd",
+      "size": 5602,
+      "sha256": "7e36375148b0fd2d0d53c51b9f23864c804c9e4608f1852eada67b13db426f56"
+    },
+    {
+      "path": "scripts/ui/core_shell.gd",
+      "size": 1705,
+      "sha256": "a485ed8ce1430d985f68da6b58fcec1e6913ff946dbd592a0fde70d3478f2bf5"
+    },
+    {
+      "path": "tests/__init__.py",
+      "size": 55,
+      "sha256": "e3c1717f9daee2bf23f7432a7114795e76e8fb64f74f5340d42e4eccb4aa50bf"
+    },
+    {
+      "path": "tests/test_core.py",
+      "size": 1715,
+      "sha256": "be4432fd6a4f6700e485e920d7073c559d3c3b7a8bd5b5387e83f430be2302eb"
+    },
+    {
+      "path": "tests/test_expansion.py",
+      "size": 5952,
+      "sha256": "ad4bafc1111ef3211ff3507e8d04d527362dd765ea222c5a265ad72a7dd2c024"
+    },
+    {
+      "path": "tests/test_extended.py",
+      "size": 2668,
+      "sha256": "dd2165d4ac7d9e5277f218dc4a5cef8a5d87ee5ccf1a0f1d8102fcc9d44fa1c5"
+    },
+    {
+      "path": "tests/test_lan.py",
+      "size": 2921,
+      "sha256": "71a2374f7a6ea780cd83a5d26a816e8624ea914a05df8b492f84e48f820eb9dd"
+    },
+    {
+      "path": "tests/test_party_games.py",
+      "size": 4006,
+      "sha256": "dcbc05796f4d46eb843feb50750435f987738146717b451f7357dce52aad7374"
+    },
+    {
+      "path": "tests/test_sample_games.py",
+      "size": 6150,
+      "sha256": "2661bf6146729f3942409c78a805b1174d8b4bfa2ba7e117c2e4ac5b7c16c91a"
+    },
+    {
+      "path": "tests/test_stage1_samples.py",
+      "size": 3896,
+      "sha256": "a714da96818317bc6376f849faf3974d55f3090626133dd1f5bedca60a33fac7"
+    },
+    {
+      "path": "tools/__init__.py",
+      "size": 271,
+      "sha256": "0c2fb70d1f2233d390cd78a82c9e919c7f629514ca65643434d54cbba7290133"
+    },
+    {
+      "path": "tools/build_portable.py",
+      "size": 7824,
+      "sha256": "a33651e958898384304430876fe4b1e933471076ccb341aebd399b4b69800a83"
+    },
+    {
+      "path": "tools/lan_host.py",
+      "size": 1493,
+      "sha256": "a088444ef2462ed1b9daf7f89a5a615d182fb22e347fb814a9cf55f7357a600c"
+    },
+    {
+      "path": "tools/run_headless_smoke.py",
+      "size": 6123,
+      "sha256": "8625bcfb317293976ab9388d3fa71321a6bb7c45978b398bf2e9775b7d0b1416"
+    },
+    {
+      "path": "tools/run_party_smoke.py",
+      "size": 2886,
+      "sha256": "cf6eb7335c8d813b241285424c7473253291813c7c4a53c9bddcdb7dfd7daaee"
+    },
+    {
+      "path": "tools/run_qa.py",
+      "size": 32178,
+      "sha256": "3585bec5bb715a4927031f00a63da4156259407628b21eafbf8dbfd1f94a08ff"
+    },
+    {
+      "path": "tools/validate_content.py",
+      "size": 4061,
+      "sha256": "eda82df452f00e21b77e8b60630cc3b13f816f8f6f196352ae2765a7d70775d4"
+    },
+    {
+      "path": "ui/CoreShell.tscn",
+      "size": 4617,
+      "sha256": "2631779ab659b2affafacb89f33805c673cf922263a5ecab54463359681cb9da"
+    },
+    {
+      "path": "ui_preview/app.js",
+      "size": 37717,
+      "sha256": "d6be090217d5cf719ee74de01dec7769434792fc662ab894eb19cb187962c7d1"
+    },
+    {
+      "path": "ui_preview/index.html",
+      "size": 7264,
+      "sha256": "c01458dbc4f010eca3c00324f2559f9019882003e849373dacd71a61be6caeb7"
+    },
+    {
+      "path": "ui_preview/styles.css",
+      "size": 19999,
+      "sha256": "41562af8ac598e7d6c5f56e0e2db073b64f746f162046fe6185907f2f3b28573"
+    },
+    {
+      "path": "小白使用说明.txt",
+      "size": 1836,
+      "sha256": "f6f1612db84424e2413d927c2478c4b869f93beef04a52ec5df2470e10b7cd74"
+    },
+    {
+      "path": "BUILD_MANIFEST.json",
+      "size": 17823,
+      "sha256": "598b921e4d8c6f70450ab01c8609e9c3dcebd263968aab93defb7605f8c91a04"
+    }
+  ],
+  "build_host": {
+    "os": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "godot_detected": false
+  }
+}

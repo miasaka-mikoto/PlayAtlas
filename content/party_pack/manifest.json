@@ -1,0 +1,20 @@
+{
+  "id": "party_pack_1",
+  "title": "Party Pack 1 · LAN rules and data",
+  "version": "0.1.0",
+  "game_family": "party_expansion",
+  "ruleset_version": "party-pack-1.0",
+  "core_version_min": "0.1.0",
+  "save_schema_version": 1,
+  "dependencies": [],
+  "supported_modes": ["local_multiplayer", "lan", "local_party"],
+  "supported_inputs": ["keyboard", "mouse", "touch", "gamepad"],
+  "supported_platforms": ["windows", "android"],
+  "package_size": 0,
+  "checksum": "not-built",
+  "license": "PlayAtlas project content; third-party notices apply",
+  "entry_resource": "data/party_pack.json",
+  "content_sources": [],
+  "rules_sources": ["SRC-PARTY-TANK-001", "SRC-PARTY-UNO-001", "SRC-PARTY-UPGRADE-001", "SRC-PARTY-BJ-001", "SRC-PARTY-REELS-001", "SRC-PARTY-WHEEL-001"],
+  "trusted_code_policy": "data-only manifest example; no scripts are executed from this package"
+}

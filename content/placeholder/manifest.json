@@ -1,0 +1,18 @@
+{
+  "id": "example_data_pack",
+  "title": "Example data pack (not a game)",
+  "version": "0.1.0",
+  "game_family": "example",
+  "ruleset_version": "none",
+  "core_version_min": "0.1.0",
+  "save_schema_version": 1,
+  "dependencies": [],
+  "supported_modes": [],
+  "supported_inputs": [],
+  "supported_platforms": ["windows", "android"],
+  "package_size": 0,
+  "checksum": "",
+  "license": "CC0-1.0 (placeholder metadata only)",
+  "entry_resource": "data/example.json",
+  "content_sources": []
+}

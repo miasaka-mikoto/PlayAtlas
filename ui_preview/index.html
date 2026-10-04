@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1020">
+  <title>PlayAtlas · 世界游戏馆</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="rail" aria-label="主导航">
+      <div class="brand-mark" aria-label="PlayAtlas"><span class="brand-orbit"></span><b>PA</b></div>
+      <nav class="rail-nav">
+        <button class="rail-btn active" data-nav="home" title="游戏馆"><span>⌂</span><small>游戏馆</small></button>
+        <button class="rail-btn" data-nav="continue" title="继续上次"><span>▶</span><small>继续</small></button>
+        <button class="rail-btn" data-nav="favorites" title="收藏"><span>☆</span><small>收藏</small></button>
+        <button class="rail-btn" data-nav="stats" title="统计"><span>◌</span><small>统计</small></button>
+      </nav>
+      <div class="rail-bottom">
+        <button class="rail-btn" id="open-settings" title="设置"><span>⚙</span><small>设置</small></button>
+        <div class="offline-pill"><i></i><small>离线优先</small></div>
+      </div>
+    </aside>
+
+    <main class="main-column">
+      <header class="topbar">
+        <div class="wordmark"><strong>PLAY<span>ATLAS</span></strong><small>世界游戏馆</small></div>
+        <div class="topbar-actions">
+          <div class="status-chip"><span class="status-dot"></span><span>本地资料库</span><b id="catalog-count">36</b></div>
+          <button class="icon-btn" id="open-help" aria-label="帮助">?</button>
+          <div class="profile-dot">L</div>
+        </div>
+      </header>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span>YOUR NEXT SMALL ADVENTURE</div>
+          <h1 id="hero-title">今天，玩点<br><em>世界。</em></h1>
+          <p>从一局五子棋到一场跨文化的桌游之旅。<br>规则清楚，随时开始，离线也能继续。</p>
+          <div class="hero-actions">
+            <button class="primary-btn" id="quick-play"><span>⌁</span> 给我一局</button>
+            <button class="ghost-btn" id="resume-btn">继续上次 <span>→</span></button>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="世界游戏馆装饰图">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+          <div class="hero-tile tile-gomoku"><span class="tile-label">五子棋</span><span class="stone black"></span><span class="stone white"></span><span class="stone black small"></span></div>
+          <div class="hero-tile tile-oware"><span class="tile-label">OWARE</span><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="hero-tile tile-snake"><span class="tile-label">SNAKE</span><div class="snake-line">╭╮╰╮╭━╯</div></div>
+          <div class="hero-coordinate">25°N&nbsp;&nbsp;121°E <span>·</span> 35°N&nbsp;&nbsp;139°E</div>
+        </div>
+      </section>
+
+      <section class="continue-card" id="continue-card">
+        <div class="continue-icon">▶</div>
+        <div class="continue-info"><span class="mini-label">继续上次的旅程</span><h2 id="resume-title">五子棋 <small>· 休闲对战</small></h2><div class="progress-line"><span style="width: 42%"></span></div><span class="resume-meta" id="resume-meta">第 12 手&nbsp; · &nbsp;本地保存于刚刚</span></div>
+        <button class="continue-btn" id="continue-action">继续 <span>→</span></button>
+        <button class="close-continue" id="dismiss-continue" aria-label="关闭">×</button>
+      </section>
+
+      <section class="library-section" aria-labelledby="library-title">
+        <div class="section-heading"><div><span class="mini-label">THE LIBRARY</span><h2 id="library-title">发现一款游戏</h2></div><button class="text-btn" id="show-all">查看全部 <span>→</span></button></div>
+        <div class="toolbar">
+          <label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="搜索游戏、别名或地区" autocomplete="off"><kbd>/</kbd></label>
+          <div class="filter-scroll" role="tablist" aria-label="分类筛选">
+            <button class="filter-chip active" data-filter="全部">全部 <b id="all-count">36</b></button>
+            <button class="filter-chip" data-filter="经典轻游戏">经典轻游戏</button>
+            <button class="filter-chip" data-filter="棋盘对战">棋盘对战</button>
+            <button class="filter-chip" data-filter="纸牌休闲">纸牌休闲</button>
+            <button class="filter-chip" data-filter="世界传统">世界传统</button>
+            <button class="filter-chip" data-filter="桌面运动">桌面运动</button>
+          </div>
+          <button class="sort-btn" id="sort-btn">推荐 <span>⌄</span></button>
+        </div>
+        <div class="filter-row-secondary">
+          <button class="sub-filter active" data-mode="all">全部模式</button><button class="sub-filter" data-mode="solo">单人放松</button><button class="sub-filter" data-mode="ai">电脑对战</button><button class="sub-filter" data-mode="local">本地双人</button><button class="sub-filter" data-mode="touch">触屏友好</button>
+          <span class="result-count" id="result-count">36 款游戏</span>
+        </div>
+        <div class="game-grid" id="game-grid" aria-live="polite"></div>
+        <div class="empty-state" id="empty-state" hidden><div class="empty-glyph">⌕</div><h3>没有找到合适的游戏</h3><p>试试更短的关键词，或清除一个筛选条件。</p><button class="ghost-btn" id="clear-filters">清除筛选</button></div>
+      </section>
+
+      <footer class="footer"><span>PLAYATLAS / 世界游戏馆</span><span>规则资料清晰 · 本地保存 · 无需联网</span><span id="build-label">Preview build · 0.1.0</span></footer>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="modal-backdrop" hidden>
+    <section class="modal" id="detail-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" data-close-modal aria-label="关闭">×</button>
+      <div class="modal-visual" id="modal-visual"><canvas id="detail-canvas" width="700" height="280"></canvas><span class="modal-family" id="modal-family">棋盘对战</span></div>
+      <div class="modal-body"><div class="modal-kicker" id="modal-kicker">PLAYABLE SAMPLE</div><h2 id="modal-title">五子棋</h2><p id="modal-description"></p><div class="meta-grid" id="modal-meta"></div><div class="modal-tabs"><button class="modal-tab active" data-panel="overview">概览</button><button class="modal-tab" data-panel="tutorial">互动教程</button><button class="modal-tab" data-panel="rules">规则说明</button></div><div class="modal-panel" id="modal-panel"></div><div class="modal-actions"><button class="primary-btn" id="modal-start">开始游戏 <span>→</span></button><button class="ghost-btn" id="modal-favorite">☆ 收藏</button></div></div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
